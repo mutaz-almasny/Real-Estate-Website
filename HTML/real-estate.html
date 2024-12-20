@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="/src/Font Awesome/all.min.css ">
+     <!-- Flowbite -->
+     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</head>
+<body dir="rtl" class="flex flex-col min-h-screen">
+    
+    <!-- Navbar -->
+    <nav class="container bg-white border-gray-200 ">
+        <div class="max-w-screen-xl flex flex-row-reverse flex-wrap items-center justify-between mx-auto p-4">
+          <div class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="/imgs/logo.webp" class="logo" alt="Logo" />
+          </div>
+          <!-- Hamburger Icon -->
+          <button data-collapse-toggle="navbar-dropdown" type="button" id="menu-btn" class="block hamburger translate-y-1 md:hidden focus:outline-none" aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+              <li>
+                <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">الصفحة الرئيسية  </a>
+              </li>
+              <li>
+                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto">عقارات <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+        </svg></button>
+                  <!-- Dropdown menu -->
+                  <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                      <ul class="py-2 text-sm text-gray-700 " aria-labelledby="dropdownLargeButton">
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">بيوت</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">ارضي</a>
+                        </li>
+                        <li>
+                          <a href="#" class="block px-4 py-2 hover:bg-gray-100 ">شقق</a>
+                        </li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  ">خدماتنا</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  ">من نحن</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  ">تواصل بنا</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Real Estate -->
+       <section class="container">
+           <div class="space-y-5">
+            <img src="/imgs/Real estate agent offer house represented by model.webp" alt="" class="h-96 w-full">
+            <h1 class="text-3xl">ابحث عن منزل أحلامك معنا</h1>
+            <p class="leading-relaxed">استكشف مجموعة واسعة من العقارات، من الشقق المريحة إلى الفلل الفاخرة. سواء كنت تبحث عن شراء، بيع، أو تأجير، فريقنا المتخصص هنا لمساعدتك في اتخاذ القرار المناسب. ابدأ رحلتك نحو المنزل المثالي اليوم
+        </div>
+       </section>
+
+       <!-- Footer -->
+  <footer class="relative px-8 h-auto p-4 bg-gray-900 text-white mt-auto">
+    <!-- Footer Contents -->
+    <div class="flex justify-between">
+      <!-- Contacts -->
+      <div class="flex flex-col gap-2">
+            <div class="flex gap-2">
+            <a href="#" target="_blank"><i class="fab fa-facebook text-2xl"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram text-2xl"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-x-twitter text-2xl"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp text-2xl"></i></a>
+            <a href="#" target="_blank"><i class="fa-solid fa-envelope text-2xl"></i></a>
+            </div>
+        <div class="flex flex-col" >
+            <a href="#">77777777</a>
+            <a href="#">77777777</a>
+        </div>
+      </div>
+
+      <div class="translate-x-8">
+        <ul class="grid grid-cols-3 gap-x-4 gap-y-2 md:flex">
+          <li><a href="#">خدماتنا</a></li>
+          <li><a href="#">عروضنا</a></li>
+          <li><a href="#">من نحن</a></li>
+          <li><a href="#">مميزاتنا</a></li>
+          <li><a href="#">تواصل بنا</a></li>
+          <li><a href="#">لماذا نحن</a></li>
+        </ul>
+      </div>
+
+      <!-- Logo -->
+      <img src="/imgs/logo.webp" class="logo" alt="">
+    </div>
+
+    <!-- Copyright -->
+    <div class="absolute right-1/2 bottom-4 translate-x-1/2 ">
+      <p>حقوق الملكية الفكرية محفوظة <span id="year"></span></p>
+    </div>
+  </footer>
+
+
+     <!-- Scripts -->
+     <script src="/JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/output.css">
+    <!-- Font Awesome -->
+     <link rel="stylesheet" href="/src/Font Awesome/all.min.css ">
+     <!-- Swiper -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+     <!-- Flowbite -->
+     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</head>
+<body dir="rtl">
+
+    <!-- Navbar -->
+<nav class="container bg-white border-gray-200">
+  <div class="max-w-screen-xl flex flex-row-reverse flex-wrap items-center justify-between mx-auto py-4">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="/imgs/logo.webp" class="logo" alt="Logo" />
+    </div>
+    
+    
+     <!-- Search -->
+     <div class="relative  mx-auto md:mt-4 md:order-2 lg:order-1 lg:translate-x-1/2 lg:mx-0 lg:mt-0">
+      <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-gray-500"></i>
+      <input type="text"class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-full w-64 py-2 pl-10 pr-4 " placeholder="ابحث هنا...">
+    </div>
+
+       <!-- Hamburger Icon -->
+       <button data-collapse-toggle="navbar-dropdown" type="button" id="menu-btn" class="block hamburger translate-y-1 md:hidden focus:outline-none" aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+   
+    <!-- Navbar Links -->
+    <div class="hidden w-full md:block md:w-auto order-1" id="navbar-dropdown">
+      <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-6 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+        <li>
+          <a href="#" class="block py-2 px-3 bg-primary rounded md:bg-transparent md:text-textColor md:p-0 " aria-current="page">الصفحة الرئيسية</a>
+        </li>
+        <li>
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-textColor md:p-0 md:w-auto">
+            عقارات
+            <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+            </svg>
+          </button>
+          <!-- Dropdown menu -->
+          <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+            <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">بيوت</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">أراضي</a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 hover:bg-primary hover:text-white">شقق</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#services" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-textColor md:p-0">خدماتنا</a>
+        </li>
+        <li>
+          <a href="#aboutUs" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-textColor md:p-0">من نحن</a>
+        </li>
+        <li>
+          <a href="contact.html" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-textColor md:p-0">تواصل بنا</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+        <!-- Slider main container -->
+<div class="swiper h-[40vh] relative">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <!-- Slide 1 -->
+      <div class="swiper-slide relative">
+          <img class="w-full h-full absolute z-0" src="/imgs/istockphoto-1409298953-170667a.webp" alt="" data-index="0">
+     </div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+            <img class="w-full h-full absolute z-0" src="/imgs/Real estate agent offer house represented by model.webp" alt="" data-index="1">
+      </div>
+      <!-- Slide 3 -->
+      <div class="swiper-slide">
+        <img class="w-full h-full absolute z-0" src="/imgs/realestate940x529.jpg" alt="" data-index="2">
+      </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+      <!-- Pop Information -->
+  <div id="pop" class="bg-white shadow-md overflow-hidden md:w-1/2 absolute top-1 right-[20%] md:right-[24%] z-50 hidden">
+    <img src="" alt="" id="pop-img" class="w-full h-48 object-cover">
+    <div class="p-6 text-center ">
+        <h3 id="pop-header" class="text-xl font-medium text-gray-800 mb-2"></h3>
+        <p id="pop-text" class="text-gray-700 text-base"></p>
+    </div>
+  </div>
+  <!-- Overlay to add Black View Behind Pop Information -->
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+  </div>
+
+  <!-- Services -->
+  <section class="container" id="services">
+    <div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 sm:py-12 lg:px-8 lg:py-12">
+      <div class="mx-auto max-w-lg text-center">
+        <h2 class="text-3xl font-bold sm:text-4xl">خدماتنا</h2>
+      </div>
+  
+      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Service 1 -->
+        <div class=" flex flex-col justify-center items-center rounded-xl border border-primary p-8 shadow-xl transition hover:border-secondary hover:shadow-pink-500/10">
+          <i class="fa-solid fa-file fa-3x text-primary transform transition-transform duration-300 hover:scale-110"></i>
+          <h2 class="mt-4 text-xl font-bold">تقديم معلومات شاملة</h2>
+          <p class="mt-1 text-sm text-center text-[#808080]">
+            توفير معلومات مفصلة حول كل عقار، بما في ذلك الموقع، والمواصفات، والخدمات المحيطة، وأية تفاصيل تهم العميل.
+          </p>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="flex flex-col justify-center items-center rounded-xl border border-primary p-8 shadow-xl transition hover:border-secondary hover:shadow-pink-500/10">
+          <i class="fa fa-bolt fa-fw fa-3x text-primary transform transition-transform duration-300 hover:scale-110"></i>
+          <h2 class="mt-4 text-xl font-bold">تجهيز طلبك باسرع وقت</h2>
+          <p class="mt-1 text-sm text-center text-[#808080]">
+            توفير معلومات مفصلة حول كل عقار، بما في ذلك الموقع، والمواصفات، والخدمات المحيطة، وأية تفاصيل تهم العميل.
+          </p>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="flex flex-col justify-center items-center rounded-xl border border-primary p-8 shadow-xl transition hover:border-secondary hover:shadow-pink-500/10 md:col-span-2 lg:col-auto">
+          <i class="fa-solid fa-user-tie fa-3x text-primary transform transition-transform duration-300 hover:scale-110"></i>
+          <h2 class="mt-4 text-xl font-bold">خدمة ما بعد البيع</h2>
+          <p class="mt-1 text-sm text-center text-[#808080]">لا ينتهي دورنا عند إتمام الصفقة، بل نقدم دعمًا مستمرًا لعملائنا حتى بعد الشراء لضمان رضاهم التام.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+     <!-- Cards -->
+      <section class="container mt-2 ">
+        <h1 class="text-3xl font-bold sm:text-4xl text-center">احدث العقارات</h1>
+        <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- card 1 -->
+            <div class="card flex flex-col items-center justify-center space-y-4" >
+              <img class="w-full transition duration-200 lg:w-56 lg:h-44" src="https://www.puravankara.com/real-estate-blog/wp-content/uploads/2024/08/India%E2%80%99s-Commercial-Real-Estate-on-the-Rise-Key-Trends-and-Insights.jpg" alt="">
+              <h1>عمارة لوكس</h1>
+              <p class="line-clamp-2">العقارات تُعد واحدة من أبرز الاستثمارات طويلة الأجل، حيث تجمع بين استقرار القيمة والعائد المضمون. يشكل الموقع العامل الأهم في تحديد قيمة العقار، إلى جانب جودة البناء والخدمات المحيطة. مع تزايد الطلب على المساكن والمكاتب، يبقى الاستثمار العقاري خيارًا مثاليًا لتنمية رأس المال وتحقيق أرباح مستدامة. </p>
+
+              <div class=" flex justify-center items-center space-x-3 md:grid md:grid-cols-2 md:grid-rows-3">
+                  <p><i class="fa-solid fa-location-dot text-iconColor"></i><span class="m-2">صنعاء</span></p>
+                  <p><i class="fa-solid fa-building text-iconColor"></i><span class="m-2">دورين</span></p>
+                  <p><i class="fa-solid fa-bath text-iconColor"></i><span class="m-2">2</span></p>
+                  <p><i class="fa-solid fa-couch text-iconColor"></i><span class="m-2">2</span></p>
+                  <p><i class="fa-solid fa-bed text-iconColor"></i><span class="m-2">2</span></p>
+                  <p><i class="fa-solid fa-coins text-iconColor"></i><span class="m-2">30 مليون</span></p>
+              </div>
+
+                <!-- Read More -->
+                <div class="flex translate-x-6">
+                  <a href="#" class="relative w-40 inline-flex items-center justify-center py-3 overflow-hidden font-medium text-primary transition duration-300 ease-out border-2 border-buttonColor shadow-md group">
+                    <span class="absolute inset-0 flex items-center justify-center text-white duration-300 -translate-x-full bg-buttonColor group-hover:translate-x-0 ease" >
+                        <svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                          ></path></svg>
+                    </span>
+                    <span class="absolute flex items-center justify-center text-buttonColor transition-all duration-300 transform group-hover:translate-x-full ease">عرض التفاصيل</span>
+                    <span class="relative invisible">عرض التفاصيل</span>
+                  </a>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card flex flex-col items-center justify-center space-y-4" >
+              <img class="w-full transition duration-200 lg:w-56 lg:h-44" src="https://www.puravankara.com/real-estate-blog/wp-content/uploads/2024/08/India%E2%80%99s-Commercial-Real-Estate-on-the-Rise-Key-Trends-and-Insights.jpg" alt="">
+              <h1>عمارة لوكس</h1>
+              <p class="line-clamp-2">العقارات تُعد واحدة من أبرز الاستثمارات طويلة الأجل، حيث تجمع بين استقرار القيمة والعائد المضمون. يشكل الموقع العامل الأهم في تحديد قيمة العقار، إلى جانب جودة البناء والخدمات المحيطة. مع تزايد الطلب على المساكن والمكاتب، يبقى الاستثمار العقاري خيارًا مثاليًا لتنمية رأس المال وتحقيق أرباح مستدامة. </p>
+              
+              <div class=" flex justify-center items-center space-x-3 md:grid md:grid-cols-2 md:grid-rows-3">
+                <p><i class="fa-solid fa-location-dot text-iconColor"></i><span class="m-2">صنعاء</span></p>
+                <p><i class="fa-solid fa-building text-iconColor"></i><span class="m-2">دورين</span></p>
+                <p><i class="fa-solid fa-bath text-iconColor"></i><span class="m-2">2</span></p>
+                <p><i class="fa-solid fa-couch text-iconColor"></i><span class="m-2">2</span></p>
+                <p><i class="fa-solid fa-bed text-iconColor"></i><span class="m-2">2</span></p>
+                <p><i class="fa-solid fa-coins text-iconColor"></i><span class="m-2">30 مليون</span></p>
+            </div>
+              <!-- Read More -->
+              <div class="flex translate-x-6 ">
+                <a href="#" class="relative w-40 inline-flex items-center justify-center py-3 overflow-hidden font-medium text-primary transition duration-300 ease-out border-2 border-buttonColor shadow-md group">
+                  <span class="absolute inset-0 flex items-center justify-center text-white duration-300 -translate-x-full bg-buttonColor group-hover:translate-x-0 ease" >
+                      <svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                        ></path></svg>
+                  </span>
+                  <span class="absolute flex items-center justify-center text-buttonColor transition-all duration-300 transform group-hover:translate-x-full ease">عرض التفاصيل</span>
+                  <span class="relative invisible">عرض التفاصيل</span>
+                </a>
+              </div>
+          </div>
+            <!-- card 3 -->
+            <div class="card flex flex-col items-center justify-center space-y-4 md:col-span-2 lg:col-auto" >
+              <img class="w-full transition duration-200 lg:w-56 lg:h-44" src="https://www.puravankara.com/real-estate-blog/wp-content/uploads/2024/08/India%E2%80%99s-Commercial-Real-Estate-on-the-Rise-Key-Trends-and-Insights.jpg" alt="">
+              <h1>عمارة لوكس</h1>
+              <p class="line-clamp-2">العقارات تُعد واحدة من أبرز الاستثمارات طويلة الأجل، حيث تجمع بين استقرار القيمة والعائد المضمون. يشكل الموقع العامل الأهم في تحديد قيمة العقار، إلى جانب جودة البناء والخدمات المحيطة. مع تزايد الطلب على المساكن والمكاتب، يبقى الاستثمار العقاري خيارًا مثاليًا لتنمية رأس المال وتحقيق أرباح مستدامة. </p>
+
+              <div class="flex justify-center items-center space-x-3 lg:grid lg:grid-cols-2 lg:grid-rows-3">
+                <p><i class="fa-solid fa-location-dot text-iconColor"></i><span class="m-2">صنعاء</span></p>
+                <p><i class="fa-solid fa-building text-iconColor"></i><span class="m-2">دورين</span></p>
+                <p><i class="fa-solid fa-bath text-iconColor"></i><span class="m-2">2</span></p>
+                <p><i class="fa-solid fa-couch text-iconColor"></i><span class="m-2">2</span></p>
+                <p><i class="fa-solid fa-bed text-iconColor"></i><span class="m-2">2</span></p>
+                <p><i class="fa-solid fa-coins text-iconColor"></i><span class="m-2">30 مليون</span></p>
+              </div>
+              <!-- Read More -->
+              <div class="flex translate-x-6 ">
+                <a href="#" class="relative w-40 inline-flex items-center justify-center py-3 overflow-hidden font-medium text-primary transition duration-300 ease-out border-2 border-buttonColor shadow-md group">
+                  <span class="absolute inset-0 flex items-center justify-center text-white duration-300 -translate-x-full bg-buttonColor group-hover:translate-x-0 ease" >
+                      <svg class="size-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                        ></path></svg>
+                  </span>
+                  <span class="absolute flex items-center justify-center text-buttonColor transition-all duration-300 transform group-hover:translate-x-full ease">عرض التفاصيل</span>
+                  <span class="relative invisible">عرض التفاصيل</span>
+                </a>
+              </div>
+          </div> 
+        </div>
+        <p class="text-center mt-4">للمزيد من المواضيع اضغط <a href="/HTML/all-real-estate.html" target="_blank" class="text-blue-400 ml-2 underline-a">هنا</a></p>
+      </section>
+
+      <!-- About us -->
+  <section class="container" id="aboutUs">
+    <div class="mx-auto max-w-screen-xl px-4 py-6 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-lg text-center">
+        <h2 class="text-3xl font-bold sm:text-4xl">من نحن</h2>
+      </div>
+      <p class="mt-4 leading-normal">نحن شركة متخصصة في تقديم خدمات متكاملة في مجال العقارات، نسعى دائمًا لتلبية احتياجات عملائنا وتجاوز توقعاتهم. لا ينتهي دورنا عند إتمام الصفقة، بل نستمر في تقديم دعم شامل من خلال خدمة ما بعد البيع لضمان رضا العملاء التام.
+
+        نتميز بالسرعة والكفاءة في تجهيز الطلبات، ونوفر معلومات دقيقة وشاملة عن كل عقار، بما في ذلك الموقع، المواصفات، والخدمات المحيطة، لنساعد عملاءنا على اتخاذ قرارات مبنية على معرفة ووضوح.
+        
+        رؤيتنا هي أن نكون الشريك العقاري الأمثل لعملائنا، ملتزمين بالجودة والشفافية في كل خطوة</p>
+    </div>
+    </section>
+
+<!-- Footer -->
+<footer class="relative px-8 h-auto p-4 bg-primary text-white mt-2">
+  <!-- Footer Contents -->
+  <div class="flex justify-between">
+    <!-- Contacts -->
+    <div class="flex flex-col gap-2">
+          <div class="flex gap-2">
+          <a href="#" target="_blank"><i class="fab fa-facebook text-2xl"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-instagram text-2xl"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-x-twitter text-2xl"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-whatsapp text-2xl"></i></a>
+          <a href="#" target="_blank"><i class="fa-solid fa-envelope text-2xl"></i></a>
+          </div>
+      <div class="flex flex-col" >
+          <a href="#">77777777</a>
+          <a href="#">77777777</a>
+      </div>
+    </div>
+
+    <div class="translate-x-8">
+      <ul class="grid grid-cols-3 gap-x-4 gap-y-2 md:flex">
+        <li><a href="#">خدماتنا</a></li>
+        <li><a href="#">عروضنا</a></li>
+        <li><a href="#">من نحن</a></li>
+        <li><a href="#">مميزاتنا</a></li>
+        <li><a href="#">تواصل بنا</a></li>
+        <li><a href="#">لماذا نحن</a></li>
+      </ul>
+    </div>
+
+    <!-- Logo -->
+    <img src="/imgs/logo.webp" class="logo" alt="">
+  </div>
+
+  <!-- Copyright -->
+  <div class="absolute right-1/2 bottom-4 translate-x-1/2 ">
+    <p>حقوق الملكية الفكرية محفوظة <span id="year"></span></p>
+  </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="/JS/main.js"></script>
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+
+  // Move to another Slide   
+  autoplay: {
+   delay: 5000,
+   disableOnInteraction: false,
+ },
+});
+
+  // Stop and Resume Swiper on Click 
+   const swiperElement = document.querySelector('.swiper');
+    swiperElement.addEventListener('mouseenter', () => {
+      swiper.autoplay.stop(); 
+    });
+
+    swiperElement.addEventListener('mouseleave', () => {
+      swiper.autoplay.start();
+    });
+    </script>
+</body>
+</html>
